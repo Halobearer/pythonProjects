@@ -6,9 +6,9 @@ from Python_Assignments.credit_card_validator import check_card_length, check_ca
 
 class CreditCardTest(TestCase):
     def test_check_card_length(self):
-        sup = "438857601252626"
-        for i in sup:
-            result = check_card_length(sup)
+        card = "438857601252626"
+        for i in card:
+            result = check_card_length(card)
         self.assertTrue(16)
 
     # self.fail()
